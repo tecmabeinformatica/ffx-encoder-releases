@@ -9,7 +9,7 @@ Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatic
 
 Versão atual: **2.0 Final**
 
-Arquivo: `FFX Encoder GUI 2.0 Final Instalador.exe`
+Arquivo: `FFX.Encoder.GUI.2.0.Final.Instalador.exe`
 
 ## Requisitos
 
