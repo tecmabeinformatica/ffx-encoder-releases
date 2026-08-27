@@ -24,9 +24,9 @@ Arquivo: `FFX.Encoder.GUI.2.0.Final.Instalador.exe`
 3. Siga as instruções apresentadas pelo instalador.
 
 O aplicativo inclui os componentes necessários para executar o FFmpeg.
-Para capas e metadados voce precisa de uma chave da api TMDB.
-voce pode solicitar realizando o cadastro gratuitamente no site oficial TMDB.
-Você pode utilizar sem a chave. mas ficará limitado.
+Para capas e metadados você precisa de uma chave da API TMDB.
+Pode ser solicitada realizando o cadastro gratuitamente no site oficial TMDB.
+Você pode utilizar sem a chave, mas ficará limitado á algumas funções
 
 ## Integridade da versão 2.0 Final
 
