@@ -7,9 +7,28 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **2.0 Final**
+Versão atual: **2.1**
 
-Arquivo: `FFX.Encoder.GUI.2.0.Final.Instalador.exe`
+Arquivo: `FFX.Encoder.GUI.2.1.Instalador.exe`
+
+## Aceleração por GPU
+
+O FFX Encoder seleciona automaticamente o encoder disponível para o codec
+escolhido, sem exigir uma configuração adicional:
+
+- NVIDIA: NVENC.
+- Intel: Quick Sync Video (QSV).
+- AMD Radeon: AMF.
+- CPU: utilizada automaticamente quando não existe encoder compatível para o
+  codec selecionado.
+
+A aceleração depende dos codecs oferecidos por cada placa. Por exemplo, a AMD
+Radeon RX 5700 codifica H.264/AVC e H.265/HEVC por AMF, mas não possui encoder
+AV1 por hardware; nesse caso, AV1 é processado pela CPU.
+
+No Gerenciador de Tarefas, algumas Radeon mostram o uso do encoder dedicado no
+gráfico **Video Codec**, em vez de **Video Encode**. A CPU também pode trabalhar
+durante a decodificação, aplicação de filtros, áudio e preparação dos quadros.
 
 ## Requisitos
 
@@ -31,12 +50,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 2.0 Final
+## Integridade da versão 2.1
 
 SHA-256:
 
 ```text
-762D4D1D4BA3E870A7DA57E9B18884CC6312135FBD7F2BDAA90B46499722CE4B
+2CA48141B9CB452C806D9CA58CF8131D84DB622CE6456225FE463C4B7AB01E18
 ```
 
 ## Observação de segurança
