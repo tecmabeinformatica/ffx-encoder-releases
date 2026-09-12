@@ -7,9 +7,9 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.0**
+Versão atual: **3.0.1**
 
-Arquivo: `FFX.Encoder.3.0.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.1.Instalador.exe`
 
 ## Aceleração por GPU
 
@@ -40,22 +40,26 @@ durante a decodificação, aplicação de filtros, áudio e preparação dos qua
 
 1. Baixe o instalador pela página de Releases.
 2. Execute o arquivo baixado.
-3. Siga as instruções apresentadas pelo instalador.
+3. Escolha português, inglês ou espanhol e siga as instruções do instalador.
 
 O instalador possui interface gráfica moderna, cria um desinstalador nativo e
 oferece atalhos e integração com o menu de contexto do Windows. O aplicativo
 inclui os componentes necessários para executar o FFmpeg.
 
+Em instalações novas, o caminho padrão é `C:\Program Files\FFX Apps\FFX Encoder 3`.
+Cada aplicativo FFX deve ocupar sua própria subpasta em `FFX Apps`; a
+desinstalação do Encoder não remove os outros aplicativos.
+
 Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.0
+## Integridade da versão 3.0.1
 
 SHA-256:
 
 ```text
-1F73C28EA66B084C977E7A4644112CC8E63291EEE9FA3E0BD6F1D053AC6E8E05
+962C4B183F7374756EAF08C05B7E577216F24893E54E866DE0ED64CA753C8AB3
 ```
 
 ## Observação de segurança
