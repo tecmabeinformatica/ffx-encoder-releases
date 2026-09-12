@@ -1,4 +1,4 @@
-# FFX Encoder GUI
+# FFX Encoder 3
 
 Aplicativo para Windows voltado à organização, conversão e padronização de
 arquivos de vídeo com FFmpeg integrado.
@@ -7,9 +7,9 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **2.1**
+Versão atual: **3.0.0**
 
-Arquivo: `FFX.Encoder.GUI.2.1.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.Instalador.exe`
 
 ## Aceleração por GPU
 
@@ -50,12 +50,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 2.1
+## Integridade da versão 3.0.0
 
 SHA-256:
 
 ```text
-2CA48141B9CB452C806D9CA58CF8131D84DB622CE6456225FE463C4B7AB01E18
+1F73C28EA66B084C977E7A4644112CC8E63291EEE9FA3E0BD6F1D053AC6E8E05
 ```
 
 ## Observação de segurança
