@@ -7,9 +7,19 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.1**
+Versão atual: **3.0.2**
 
-Arquivo: `FFX.Encoder.3.0.1.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.2.Instalador.exe`
+
+## Novidades da versão 3.0.2
+
+- Limpeza de metadados textuais sem recodificação, disponível também nas
+  ferramentas em lote para processar séries e temporadas inteiras.
+- Tratamento Podcast para reduzir ruído, melhorar a presença da voz, nivelar
+  falas, comprimir a dinâmica e normalizar o volume final.
+- Escolha do codec, bitrate, canais e contêiner na função Podcast.
+- Opção para manter o contêiner original ou gerar arquivos MKV ou MP4; somente
+  o áudio é recodificado durante esse tratamento.
 
 ## Aceleração por GPU
 
@@ -54,12 +64,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.1
+## Integridade da versão 3.0.2
 
 SHA-256:
 
 ```text
-962C4B183F7374756EAF08C05B7E577216F24893E54E866DE0ED64CA753C8AB3
+4C4A7AF36171D29636F107167CA853511EB7E3BBCD9DB1686F5DEB7D0DD5E941
 ```
 
 ## Observação de segurança
