@@ -1,0 +1,46 @@
+name: Publicar release no Discord
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enviar changelog para o Discord
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "release" ]; then
+            jq '.release' "$GITHUB_EVENT_PATH" > release.json
+          else
+            gh api "/repos/$GITHUB_REPOSITORY/releases/latest" > release.json
+          fi
+
+          title=$(jq -r '.name // .tag_name' release.json)
+          tag=$(jq -r '.tag_name' release.json)
+          url=$(jq -r '.html_url' release.json)
+          body=$(jq -r '.body // "Nova versão disponível."' release.json)
+          published=$(jq -r '.published_at // ""' release.json)
+          description=$(printf '%s' "$body" | head -c 3900)
+
+          jq -n \
+            --arg title "🚀 $title" \
+            --arg url "$url" \
+            --arg description "$description" \
+            --arg tag "$tag" \
+            --arg repository "$GITHUB_REPOSITORY" \
+            --arg published "$published" \
+            '{username:"FFX Releases",embeds:[{title:$title,url:$url,description:$description,color:5793266,fields:[{name:"Versão",value:$tag,inline:true},{name:"Aplicativo",value:$repository,inline:true}],footer:{text:"FFX Apps • GitHub Releases"},timestamp:$published}]}' > payload.json
+
+          curl --fail --silent --show-error \
+            -H "Content-Type: application/json" \
+            -d @payload.json \
+            "$DISCORD_WEBHOOK_URL"
