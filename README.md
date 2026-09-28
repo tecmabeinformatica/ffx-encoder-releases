@@ -7,9 +7,15 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.2**
+Versão atual: **3.0.3**
 
-Arquivo: `FFX.Encoder.3.0.2.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.3.Instalador.exe`
+
+## Novidades da versão 3.0.3
+
+- Correção do modo inteligente para gravar os metadados obtidos do TMDb.
+- Inclusão de título, descrição, sinopse e data ou ano nos arquivos processados.
+- Uso dos dados específicos de cada episódio quando disponíveis.
 
 ## Novidades da versão 3.0.2
 
@@ -64,12 +70,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.2
+## Integridade da versão 3.0.3
 
 SHA-256:
 
 ```text
-4C4A7AF36171D29636F107167CA853511EB7E3BBCD9DB1686F5DEB7D0DD5E941
+C103266F1DC09C290CEC46ED82C31F20F0BAFCB1296F2666DD9A1F61F718A11E
 ```
 
 ## Observação de segurança
