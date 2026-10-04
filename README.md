@@ -7,9 +7,23 @@ arquivos de vídeo com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.3**
+Versão atual: **3.0.4**
 
-Arquivo: `FFX.Encoder.3.0.3.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.4.Instalador.exe`
+
+## Novidades da versão 3.0.4
+
+- Ícones vetoriais compatíveis com Windows 10 e Windows 11, sem depender da
+  disponibilidade da fonte Segoe Fluent Icons.
+- Conversão de vídeos HEVC HDR10 de 10 bits para H.264 com adaptação para SDR
+  e formato de pixels compatível.
+- Fallback automático para processamento pela CPU quando o encoder da GPU não
+  consegue concluir a conversão.
+- Verificação das faixas antes da troca de contêiner. Quando existem áudios,
+  legendas, capas ou anexos incompatíveis com o formato de destino, o usuário
+  pode cancelar ou continuar removendo somente esses itens; o vídeo e as
+  demais faixas compatíveis continuam sendo processados.
+- Mensagens detalhadas com o erro real retornado pelo FFmpeg.
 
 ## Novidades da versão 3.0.3
 
@@ -70,12 +84,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.3
+## Integridade da versão 3.0.4
 
 SHA-256:
 
 ```text
-C103266F1DC09C290CEC46ED82C31F20F0BAFCB1296F2666DD9A1F61F718A11E
+A6F61FD9B45F972A45A94056B1B44BF27B03A5B70CB7AC93F287FA6779963E15
 ```
 
 ## Observação de segurança
