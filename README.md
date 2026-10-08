@@ -1,15 +1,28 @@
 # FFX Encoder 3
 
 Aplicativo para Windows voltado à organização, conversão e padronização de
-arquivos de vídeo com FFmpeg integrado.
+arquivos de vídeo e áudio com FFmpeg integrado.
 
 ## Download
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.4**
+Versão atual: **3.0.5**
 
-Arquivo: `FFX.Encoder.3.0.4.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.5.Instalador.exe`
+
+## Novidades da versão 3.0.5
+
+- Novo Modo Áudio, ativado automaticamente quando a pasta contém somente
+  arquivos de áudio.
+- Interface adaptada para liberar conversão, tratamento Podcast e ferramentas
+  compatíveis com áudio.
+- Conversão para AAC/M4A, MP3, Opus, FLAC e WAV, com opção de manter o formato
+  original, escolher canais e normalizar o volume.
+- Tratamento Podcast direto em arquivos de áudio, preservando metadados e com
+  escolha do formato de saída.
+- Pastas mistas continuam no Modo Vídeo e separam os áudios avulsos para evitar
+  falhas de processamento.
 
 ## Novidades da versão 3.0.4
 
@@ -84,12 +97,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.4
+## Integridade da versão 3.0.5
 
 SHA-256:
 
 ```text
-A6F61FD9B45F972A45A94056B1B44BF27B03A5B70CB7AC93F287FA6779963E15
+05EBF65F2AB8FE1FFFF31554C649ACBD34165B6DCCC5F877E690F4D4C9CA4FB1
 ```
 
 ## Observação de segurança
