@@ -7,9 +7,22 @@ arquivos de vídeo e áudio com FFmpeg integrado.
 
 Baixe o instalador na página de [Releases](https://github.com/tecmabeinformatica/ffx-encoder-releases/releases/latest).
 
-Versão atual: **3.0.5**
+Versão atual: **3.0.6**
 
-Arquivo: `FFX.Encoder.3.0.5.Instalador.exe`
+Arquivo: `FFX.Encoder.3.0.6.Instalador.exe`
+
+## Novidades da versão 3.0.6
+
+- Abertura de um ou vários arquivos e suporte a arrastar e soltar, mantendo a
+  abertura tradicional por pasta.
+- Seleção individual dentro de uma pasta: sem seleção, as ações processam todos
+  os arquivos; com um cartão selecionado, somente aquele item é processado.
+- Correção do fluxo de identificação manual do Modo Inteligente e da
+  renomeação final de filmes e episódios.
+- Extração de MP3 em CBR 256 kbps, 48 kHz e estéreo para compatibilidade com
+  editores como o DaVinci Resolve.
+- Saídas WAV, FLAC e M4A com codec e contêiner explícitos, além de validação por
+  FFprobe depois da extração.
 
 ## Novidades da versão 3.0.5
 
@@ -97,12 +110,12 @@ Para usar capas e metadados, é necessária uma chave da API do TMDb. Ela pode
 ser solicitada gratuitamente após o cadastro no site oficial do TMDb. O
 aplicativo funciona sem a chave, mas alguns recursos ficam indisponíveis.
 
-## Integridade da versão 3.0.5
+## Integridade da versão 3.0.6
 
 SHA-256:
 
 ```text
-05EBF65F2AB8FE1FFFF31554C649ACBD34165B6DCCC5F877E690F4D4C9CA4FB1
+ABD385725F8C751105F4B41CC185AC593F873F75E8C38D5F7F0A6287B9881433
 ```
 
 ## Observação de segurança
